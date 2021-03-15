@@ -1,3 +1,18 @@
 Use Pandas to read a .csv file (output from Jira)
+from: https://realpython.com/python-command-line-arguments/
+"""
+# reverse_exc.py
+
+import sys
+
+try:
+    arg = sys.argv[1]
+except IndexError:
+    raise SystemExit(f"Usage: {sys.argv[0]} <string_to_reverse>")
+print(arg[::-1])
+"""
+
+
 process the data from the Jira data
+
 output to an Excel file .xlsx
